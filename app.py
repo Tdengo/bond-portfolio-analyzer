@@ -121,7 +121,7 @@ with col1:
     st.dataframe(styled_sb_df, hide_index=True, use_container_width=True)
 
 with col2:
-    st.subheader("Price-Yield Curve vs. Duration")
+    st.subheader("Price-Yield Curve vs. Duration Estimate")
     fig = px.line(chart_data)
     fig.update_traces(line = dict(color = "cornflowerblue"), selector = dict (name = "True Price"))
     fig.update_traces(line = dict(dash = "5, 3", color = "salmon"), selector = dict (name = "Duration Estimate"))
